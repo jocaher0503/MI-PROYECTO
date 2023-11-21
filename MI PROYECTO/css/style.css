@@ -1,9 +1,13 @@
 @font-face {
-    font-family: titulo;
+    font-family: header;
     src: url(../fonts/SoccerLeagueCollege.ttf);
 }
 @font-face {
     font-family: textonormal;
+    src: url(../fonts/Ubuntu-B.ttf);
+}
+@font-face {
+    font-family: titulo;
     src: url(../fonts/Soccer\ Team.otf);
 }
 *{box-sizing: border-box;}
@@ -15,6 +19,7 @@ body{
     padding: 0;
 }
 header{
+    font-family: header;
     font-size: 80px;
     padding: 50px;
     background-color: green;
@@ -27,7 +32,7 @@ header{
     background-color: rgb(161, 226, 161);
 }
 nav{
-
+    font-family: titulo;
     display: flex;
     flex-direction: row;
     background-color: darkgreen;
@@ -38,7 +43,6 @@ nav a{
     text-decoration: none;
 }
 #wrapper {
-    font-family: titulo;
     background-color: rgb(99, 163, 99);
     width: 70%;
     margin: auto;
@@ -50,7 +54,7 @@ nav a{
     padding: 20px;
 }
 h1{
-    font-family: textonormal;
+    font-family: titulo;
     text-align: center;
     border-bottom: 3px solid;
     border-radius: 5px;
