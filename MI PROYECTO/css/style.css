@@ -20,6 +20,11 @@ header{
     background-color: green;
     text-align: center;
 }
+#button1{
+    display: block;
+    margin: auto;
+    background-color: rgb(161, 226, 161);
+}
 nav{
 
     display: flex;
