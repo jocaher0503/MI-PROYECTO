@@ -1,10 +1,10 @@
 @font-face {
     font-family: titulo;
-    src: url(../fonts/Soccer\ Team.otf);
+    src: url(../fonts/SoccerLeagueCollege.ttf);
 }
 @font-face {
     font-family: textonormal;
-    src: url(../fonts/NimbusSanL-Bol.otf);
+    src: url(../fonts/Soccer\ Team.otf);
 }
 *{box-sizing: border-box;}
 body{
@@ -21,6 +21,7 @@ header{
     text-align: center;
 }
 #button1{
+    font-family: textonormal;
     display: block;
     margin: auto;
     background-color: rgb(161, 226, 161);
@@ -43,11 +44,13 @@ nav a{
     margin: auto;
 }
 #hero{
+    font-family: textonormal;
     flex: 100%;
     background-color: rgb(99, 163, 99);
     padding: 20px;
 }
-h1,h2{
+h1{
+    font-family: textonormal;
     text-align: center;
     border-bottom: 3px solid;
     border-radius: 5px;
