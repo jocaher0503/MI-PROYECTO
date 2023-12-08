@@ -23,7 +23,7 @@
 *{box-sizing: border-box;}
 body{
     font-family: textonormal;
-    background-image: url(../img/1137.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -96,7 +96,7 @@ h2{
 /************************ HERO SECTION ******************************/
 
 #hero{
-    background-image: url(../img/pngtree-green-field-inside-football-stadium-in-silhouette-under-sky-image_2628209.jpg);
+    background-image: url(../img/hero.jpg);
     background-size: cover;
     height: 50vh;
     background-position: center;    
