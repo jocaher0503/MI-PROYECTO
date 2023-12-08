@@ -173,11 +173,6 @@ button{
 footer{
     padding: 40px 0;
 }
-footer .social{
-    text-align: center;
-    padding-bottom: 25px;
-    color: #4b4c4d;
-}
 footer .social a{
     font-size: 24px;
     color: inherit;
