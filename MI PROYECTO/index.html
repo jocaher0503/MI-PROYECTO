@@ -6,33 +6,107 @@
     <title>FOOTBALL</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/balon.favicon.png" type="image/x-icon">
+    <script src="./js/functions.js"></script>
 </head>
 <body>
-    <div id="wrapper">
-        <header>FOOTBALL
-            <button id="button1">Learn More!</button>
-        </header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-            <a href="#">About me</a>
-        </nav>
-        <section id="hero">
-            <h1>FOOTBALL HISTORY</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ullam obcaecati pariatur dolorem, error ratione harum, ut hic fugiat nihil, laboriosam rerum libero eligendi doloremque distinctio facilis sit praesentium dicta?</p>
-            <h1>HOW TO PLAY</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus pariatur quisquam quam laborum qui, maiores officiis, nostrum tempore nobis doloribus at laudantium placeat voluptatum? Porro labore accusamus placeat laboriosam nihil.</p>
-            <h1>RULES OF GAME</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio ut laudantium itaque? Explicabo illum similique at architecto libero maxime odio inventore, unde harum velit facere non ex eius ratione.</p>
-            <h1>IMPORTANTS TROPHIES</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatem ad quo quisquam voluptate eius commodi nesciunt magnam, dolor pariatur eligendi. Commodi dolores facilis distinctio, illum dolorem vitae dignissimos perferendis.</p>
-        </section>
-        <footer>
-            <img src="./img/instagram.png" width="30" height="30">
-            <img src="./img/youtube.png" width="30" height="30">
-            <img src="./img/tik-tok.png" width="30" height="30">
-        </footer>
+    <div id="wrapper"> 
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" onclick="closeNav()">Home</a>
+            <a href="#intro" onclick="closeNav()">Football History</a>
+            <a href="#skills" onclick="closeNav()">Skills</a>
+            <a href="#rules" onclick="closeNav()">Rules</a>
+            <a href="#trophies">Trophies</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+    <!-- Botón hamburguesa para abrir el menu lateral-->
+    <span id="burguer" onclick="openNav()">&#9776</span>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <h1>FOOTBALL</h1>
+        <a href="#intro"><button>Discover!</button></a>
+    </section>
+
+    <section id="intro">
+        <h2>FOOTBALL HISTORY</h2>
+        <!-- grid a 2 columnas -->
+        <div class="grid-2">                                    
+            <div class="col-2">
+                <p>La historia del fútbol se considera a partir de 1869, año de fundación de la Asociación Inglesa de Fútbol, aunque en sus orígenes, al igual que los demás códigos de fútbol, se remontan varios siglos en el pasado, particularmente en las islas británicas durante la Edad Media. Si bien existían puntos en común entre diferentes juegos de pelota que se desarrollaron desde los años del siglo III a. C.</p>
+                <button>Read more</button>
+            </div>                                            
+            <div class="col-2">
+                    <img src="./img/historia.jpg" alt="">
+                </div>                                            
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <div class="grid-3">
+            <div class="col-3">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/VMH6d1_R17U?si=FQThZI74Z-35h9G2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_NlXS7iiJEc?si=21UNNYIun4iAdua1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/KlujmNc2Np0?si=h29OKciwCLKOjI-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/FpF5ThHQb10?si=OiRnyCs_VYG2U8r1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/dQ1-aXGO0ac?si=V7GO9RnDoI7n2hqr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/2jR2ozYD7PI?si=al_MsUZT0AIuIcbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="social">
+            <a href="https://twitter.com/PTAMalaga" target="_blank"><i class="fa fa-twitter" style="color: skyblue;"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Juan Carlos Ocaña Heredia @ 2023
+        </p>
+    </footer>
     </div>
 </body>
 </html>
