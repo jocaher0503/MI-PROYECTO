@@ -30,15 +30,16 @@ body{
 }
 #wrapper {
     background-color: rgb(99, 163, 99);
-    width: 75%;
+    width: 100%;
     margin: auto;
 }
 h1{
     font-family: header;
     text-align: center;
-    font-size: 3em;
-    padding: 100px;
-}
+    font-size: 5em;
+    position: relative;
+    padding-top: 10%;
+    }
 h2{
     font-family: header;
     text-align: center;
@@ -50,11 +51,12 @@ h2{
 
 #burguer{
     font-size: 2em;
+    text-align: center;
     cursor: pointer;
     position: fixed;
     top: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255,);
+    background-color: rgba(255, 255, 255, 0.69);
     padding: 3px;
 }
 
@@ -103,10 +105,13 @@ h2{
     position: relative;
 }                                           
 #hero button{
+    font-family: textonormal;
+    background-color: #ffffff;
     position: absolute;
     left: 50%;
     top: 75%;
-    transform: translate(-50%,-50%);}
+    transform: translate(-50%,-50%);
+}
 button{
     border: none;
     font-weight: bold;
@@ -116,7 +121,10 @@ button{
     background-color: rgb(16, 185, 69);
 }
 #hero button:hover{
-    background-color: rgb(7, 138, 27);
+    background-color: rgb(155, 186, 158);
+}
+#more{
+    display: none;
 }
 
 /********************* INTRO SECTION ************************/
@@ -131,11 +139,15 @@ button{
 #intro img{
     width: 100%;
 }
+#intro button{
+    font-family: textonormal;
+    background-color: #ffffff;
+}
 #intro{
     padding: 15px;
 }
 #intro button:hover{
-    background-color: rgb(7, 138, 27);
+    background-color: rgb(155, 186, 158);
 }
 
 /******************** SKILLS SECTION **********************/
@@ -219,7 +231,6 @@ footer .copyright{
 /******************** RESPONSIVIDAD ***********************/
 
 @media only screen and (width>650px){
-    h1{font-size: 4em;}
     .grid-4{grid-template-columns: auto auto;}
     .grid-3{grid-template-columns: auto auto auto;}
 }
