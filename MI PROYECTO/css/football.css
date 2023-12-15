@@ -36,9 +36,9 @@ body{
 h1{
     font-family: header;
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
     position: relative;
-    padding-top: 10%;
+    padding-top: 40%;
     }
 h2{
     font-family: header;
@@ -127,9 +127,9 @@ button{
 
 /********************* INTRO SECTION ************************/
 
-#intro .grid-2{
+.grid-2{
     display: grid;
-    grid-template-columns: auto auto;                
+    grid-template-columns: 100%;                
 }
 #intro .col-2{
     padding: 6%;
@@ -155,10 +155,7 @@ button{
 
 #skills{
     background-color: rgb(53, 116, 62);
-}
-#skills .grid-2{
-    display: grid;
-    grid-template-columns: auto auto;
+    padding: 15px;
 }
 #skills .col-2{
     padding: 4%;
@@ -185,10 +182,11 @@ button{
 
 #trophies{
     background-color: rgb(53, 116, 62);
+    padding: 15px;
 }
-#trophies .grid-3{
+.grid-3{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     gap: 20px;
 }
 #trophies .col-3{
@@ -203,7 +201,6 @@ button{
     font-family: textonormal;
 }
 .flip-card {
-    background-color: rgb(99, 163, 99);
     border-radius: 10px;
     margin: auto;
     width: 300px;
@@ -237,7 +234,7 @@ button{
 }
 /* Style the back side */
 .flip-card-back {
-    background-color: rgb(53, 116, 62);
+    border: 1px solid white;
     color: white;
     transform: rotateY(180deg);
     border-radius: 10px;
@@ -293,15 +290,20 @@ footer .copyright{
 
 /******************** RESPONSIVIDAD ***********************/
 
-@media only screen and (width>650px){
+@media only screen and (min-width:600px){
+    h1{padding-top: 30%;
+    font-size: 6em;}
+    .grid-2{grid-template-columns: auto auto;}
+    .grid-3{grid-template-columns: auto auto;}
     .grid-4{grid-template-columns: auto auto;}
-    .grid-3{grid-template-columns: auto auto auto;}
 }
 
-@media only screen and (width>900px) {
-    #wrapper{width: 80%;}                       /* MOBILE FIRST */
-    .grid-2{grid-template-columns: auto auto;}    /* MOBILE FIRST */
-    .grid-4{grid-template-columns: auto auto auto auto;}
+@media only screen and (min-width:900px) {
+    #wrapper{width: 80%;}
+    h1{padding-top: 10%;}
+    .grid-2{grid-template-columns: auto auto;}    
+    .grid-3{grid-template-columns: auto auto auto;}
+    .grid-4{grid-template-columns: auto auto auto;}
 }
 
 /************ RESPONSIVIDAD DE topnav responsive ***********/
