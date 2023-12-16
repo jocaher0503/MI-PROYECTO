@@ -24,7 +24,7 @@
 body{
     font-family: textonormal;
     background-image: url(../img/background.jpg);
-    background-size: cover;
+    background-size: contain;
     margin: 0;
     padding: 0;
 }
@@ -178,6 +178,36 @@ button{
     height: 100%;
 }
 
+/*********************** POSITIONS ***************************/
+
+.container2 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.container2:hover .overlay {
+    opacity: 1;
+}
+
 /*********************** TROPHIES ***************************/
 
 #trophies{
@@ -298,7 +328,7 @@ footer .copyright{
     .grid-4{grid-template-columns: auto auto;}
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1050px) {
     #wrapper{width: 80%;}
     h1{padding-top: 10%;}
     .grid-2{grid-template-columns: auto auto;}    
