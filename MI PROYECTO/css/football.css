@@ -30,7 +30,7 @@ body{
 }
 #wrapper {
     background-color: rgb(99, 163, 99);
-    width: 100%;
+    width: auto;
     margin: auto;
 }
 h1{
@@ -127,6 +127,9 @@ button{
 
 /********************* INTRO SECTION ************************/
 
+#intro{
+    padding: 15px;
+}
 .grid-2{
     display: grid;
     grid-template-columns: 100%;                
@@ -140,9 +143,6 @@ button{
 #intro button{
     font-family: textonormal;
     background-color: #ffffff;
-}
-#intro{
-    padding: 15px;
 }
 #intro button:hover{
     background-color: rgb(155, 186, 158);
